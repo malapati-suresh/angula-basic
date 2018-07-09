@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+header { display: block;}
+header .navbar-nav { float: right;}
+header .navbar-brand { padding: 3px 15px;}
+
+.banner { background:url(./assets/images/banner.png) no-repeat top center; background-size: cover; width: 100%; height: 492px; }
+
+.footer-nav				{margin:0;padding:20px 0 20px;width:100%;display:block;background:#7d7d7d;text-align: center; position: fixed; bottom: 0; width: 100%; left: 0;}
+.footer-nav p{font-size:20px;color:#000;font-weight: 300; margin: 0;}
+
+
+

@@ -1,0 +1,34 @@
+<header>
+
+  <nav class="navbar navbar-inverse">
+          <div class="container">
+              <div class="row">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#"><img src="assets/images/logo.svg" width="179" height="39"></a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li class="active"><a routerLink="/home">Home</a></li>
+              <li><a routerLink="/about">About</a></li>
+              <li><a routerLink="/product">Product</a></li>
+  
+              <li class="dropdown"><a routerLink="service" data-toggle="dropdown" class="dropdown-toggle">Service
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a routerLink= "service/devops">Devops</a></li>
+                  <li><a routerLink= "service/growth">Growth</a></li>
+                </ul>
+  
+              </li>
+              <li><a routerLink="/contact">Contact</a></li>
+              <li><a routerLink="/login">Login</a></li>
+            </ul>
+          </div>
+      </div>
+  </nav>
+  
+  </header>
+  
+  
+  <router-outlet></router-outlet>
+  
+  

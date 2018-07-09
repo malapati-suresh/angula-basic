@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row"><h2>Data Binding & Directives</h2></div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="row">
+
+        {{menu}}
+
+        <br>
+
+        <span>This is For Angular {{works}} </span>
+
+        <br>
+
+        <br>
+
+        <div *ngFor = "let block of blocks let i=index" style="color: red;">
+
+             {{i + 1 + "."}}   {{block}}
+
+        </div> 
+
+       <!-- <ng-template ngFor let-block [ngForOf]="blocks" let-i="index">
+            {{block}}
+       </ng-template> -->
+       
+
+       <div *ngIf ="data.city">
+            {{data.city}}
+       </div>
+
+
+
+
+<div >
+
+
+</div>
+
