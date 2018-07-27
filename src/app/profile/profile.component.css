@@ -1,0 +1,15 @@
+
+.block { border:#000 1px solid; border-radius:3px;}
+
+.block h4 { display: inline-block; float: left;}
+.block button { display: inline-block; float: right; padding: 7px 0 0; background:none; border: none;}
+.block button .fa { font-size: 25px; line-height: 25px;color: #337ab7;}
+
+.rgt-block { float: right; margin: 0 0 30px;}
+.rgt-block a { margin: 0 5px 0 0; float: none;}
+.rgt-block a .fa { font-size: 25px; line-height: 25px;}
+.rgt-block a.no-mar { margin: 0;}
+
+.popup-model { display: block;}
+.rgt-btn { float: right;}
+.rgt-btn button { margin: 0 5px 0;}

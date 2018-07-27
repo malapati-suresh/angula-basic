@@ -45,7 +45,6 @@ else if (!this.password) {
 }else{
    
 this.user = {
-
     name :this.name,
     email:this.email,
     phone:this.number,

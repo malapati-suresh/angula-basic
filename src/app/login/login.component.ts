@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, ReactiveFormsModule, FormControl, Validators } from '@angular/forms';
 import { RegisterService } from '../product/product.service';
 import { Router } from '@angular/router';
-
+import { jsonpFactory } from '@angular/http/src/http_module';
 
 
 @Component({
@@ -23,25 +23,28 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.loginForm = new FormGroup({
-
       email: new FormControl(null, [Validators.required, Validators.email]),
       password: new FormControl(null, [Validators.required])
-
     })
 
   }
 
   login() {
-
+    
     if (this.loginForm.status == "INVALID") {
       alert("Enter the Email")
     } else {
       console.log("In")
       this.regiService.login(this.loginForm.value)
+
         .subscribe(
           (response) => {
-            console.log(response)
-            this.router.navigate(['./profile'])
+            var userData ={
+              id :response.user._id,
+              token:response.userToken
+            }
+            localStorage.setItem('userData', JSON.stringify(userData));
+            this.router.navigate(['./profile']);
           }
         )
 

@@ -5,8 +5,70 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="row">
+
+        <div class="block col-md-4 col-md-offset-4">
+
+            <h4>Add Experience </h4> <button (click)="openModal(template)"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+            <div class="clearfix"></div>
+
+            <div class="rgt-block">
+                    
+                    <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a> 
+                    <a href="#" class="no-mar"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                  
+            </div>
+            <div class="clearfix"></div>  
+            
+
+            <p *ngFor ="let getList of getLists" style="color: #000;"><b>Description:</b>
+                
+                
+
+            </p>
 
 
+        </div>
+
+    </div>
+</div>
+
+
+ <div class="popup-model">
+
+    <ng-template #template>
+        
+        <div class="modal-body">
+
+            <form [formGroup]="detailForm" (ngSubmit)= "saving()">
+
+                        <div class="form-group">
+                            <label>Designation</label>
+                            <input class="form-control" placeholder="Enter Designation" formControlName="description">
+                        </div>
+                
+                        <div class="form-group">
+                                <label>Description</label>
+                            <textarea class="form-control" rows="5" placeholder="Enter Description" formControlName="designation"></textarea>
+                        </div>
+                
+                        <div class="rgt-btn">
+                            <button type="submit" value="Submit" class="btn btn-default">Save</button>
+                            <button type="button" class="btn btn-default" (click)='modalRef.hide()'>Close</button>
+                        </div>
+                      <div class="clearfix"></div> 
+
+
+            </form>
+          
+        </div>
+        
+      </ng-template>
+      
+
+
+<!-- 
 <div class="container">
     <div class="row">
        
@@ -43,13 +105,15 @@
         </div>
 
 
-
     </div>
 
 
 
+
+
+
     </div>
-</div>
+</div> -->
 
 
 

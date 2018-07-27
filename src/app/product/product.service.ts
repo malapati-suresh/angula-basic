@@ -1,5 +1,8 @@
 import { Injectable } from "@angular/core";
 import { Http} from '@angular/http';
+import 'rxjs/add/operator/map';
+
+
 
 
 @Injectable()
@@ -19,6 +22,9 @@ register(details){
 login (data){
 
   return this.http.post ("http://localhost:3500/v1/user/login", data)
+   .map(
+    res=>res.json()
+   )
 
 }
     
