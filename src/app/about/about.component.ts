@@ -18,10 +18,13 @@ public blocks : any = [];
 
 public data: any =[];
 
+public show : boolean = false;
+
+
 ngOnInit () {
     
     this.blocks = [ "Hello", "How", "Are", "You"]
-
+    
 this.data = [
  {
      name: "Suresh",
@@ -41,6 +44,20 @@ this.data = [
 ]
    
 }
+
+hide() {
+
+ this.show = !this.show;   
+
+//   if(this.show){
+//     this.show = false;
+//   } else{
+//       this.show = true;
+//   }
+    
+   
+}
+
 
 
 
