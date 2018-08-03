@@ -18,7 +18,9 @@ public blocks : any = [];
 
 public data: any =[];
 
-public show : boolean = false;
+public show : boolean = true;
+
+public showCont :boolean =true;
 
 
 ngOnInit () {
@@ -55,9 +57,26 @@ hide() {
 //       this.show = true;
 //   }
     
-   
 }
 
+ngbtn(){
+    this.showCont = !this.showCont;
+}
+
+
+demo (){
+    return "bcg"
+}
+
+dynamic(){
+
+return {
+    width: 200 + 'px',
+    height: 150 + 'px',
+    'background-color' : "red"
+}
+
+}
 
 
 

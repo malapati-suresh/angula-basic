@@ -46,6 +46,25 @@
         </p>
 
         <button type="button" (click)="hide()" class="btn btn-primary">Click</button>
+        
+        <hr>
+
+
+        <div [ngClass]="{'demo':showCont, 'change':!showCont}">Classes demos</div>
+        <br>
+        <button type="button" (click)="ngbtn()" class="btn btn-primary">Button</button>
+
+        
+    <hr>
+
+        <div [ngStyle]="dynamic()">
+                ng Styles Properties
+        </div>
+
+
+        <img src="assets/images/location.jpg">
+
+
 
 
     </div>
