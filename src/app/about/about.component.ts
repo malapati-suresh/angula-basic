@@ -22,10 +22,15 @@ public show : boolean = true;
 
 public showCont :boolean =true;
 
+public logo : any = [];
+public selectLogos : any;
 
 ngOnInit () {
     
-    this.blocks = [ "Hello", "How", "Are", "You"]
+this.logo = ["../assets/images/location.jpg", "../assets/images/gallery-1.jpg"]    
+this.selectLogos = this.logo[0];
+
+this.blocks = [ "Hello", "How", "Are", "You"]
     
 this.data = [
  {
@@ -46,6 +51,8 @@ this.data = [
 ]
    
 }
+
+
 
 hide() {
 
@@ -75,6 +82,13 @@ return {
     height: 150 + 'px',
     'background-color' : "red"
 }
+
+}
+
+
+showImg(){
+ this.show = !this.show;   
+this.show ? this.logo[0] : this.logo[1];
 
 }
 
