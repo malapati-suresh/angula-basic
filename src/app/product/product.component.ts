@@ -5,19 +5,17 @@ import { Router } from '@angular/router';
 
 @(Component) ({
 
-    selector : "product",
-    templateUrl : "./product.component.html",
-    styleUrls : ["./product.component.css"]
+selector : "product",
+templateUrl : "./product.component.html",
+styleUrls : ["./product.component.css"]
 
 })
 
 export class ProductComponent  implements OnInit {
 
 constructor (
-
 private router :Router,
-
-    private regiService : RegisterService
+private regiService : RegisterService
 ) {
 
 }

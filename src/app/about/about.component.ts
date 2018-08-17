@@ -88,7 +88,7 @@ return {
 
 showImg(){
  this.show = !this.show;   
-this.show ? this.logo[0] : this.logo[1];
+ this.selectLogos = this.show ? this.logo[0] : this.logo[1];
 
 }
 
